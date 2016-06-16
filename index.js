@@ -27,7 +27,7 @@ const getStudentById=(id)=>{
     );
 };
 const isSomeStudentHasGradeGreaterThan2=()=>{
-    return students.some(student=> student.grade>2.00);//มีอย่างน้อย1ตัว
+    return students.every(student=> student.grade>2.00);//ทุกคัว
 }
 getStudentById('562115028');//input id
 console.log(isSomeStudentHasGradeGreaterThan2());
