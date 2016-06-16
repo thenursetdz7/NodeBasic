@@ -1,5 +1,5 @@
 'use strict';
-const student={
+const student1={
     id:'562115028',
     name: 'Nurse'
 };
@@ -12,13 +12,16 @@ const student3={
     name: 'Test'
 };
 
+const students=[student1,student2,student3];
 
-const getStudentById=(id)=>{
-    switch (id){
-        case '562115028':return'good';
-        case '562115000':return'bad';
-        }
+const getStudentById=()=>{
+    //students.forEach(student=>{
+    
+    students.forEach((student,index)=>{
+        console.log(index,student)
+    });
 
 };
-console.log(getStudentById('562115028'));//input id
+
+getStudentById();//input id
 
