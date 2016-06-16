@@ -14,14 +14,9 @@ const student3={
 
 const students=[student1,student2,student3];
 
-const getStudentById=()=>{
-    //students.forEach(student=>{
-    
-    students.forEach((student,index)=>{
-        console.log(index,student)
-    });
+const getStudentById=(id)=>{
+    console.log(students.filter(student=>student.id===id).pop());
 
 };
-
-getStudentById();//input id
+getStudentById('562115028');//input id
 
