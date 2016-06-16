@@ -29,5 +29,8 @@ const getStudentById=(id)=>{
 const isSomeStudentHasGradeGreaterThan2=()=>{
     return students.every(student=> student.grade>2.00);//ทุกคัว
 }
-getStudentById('562115028');//input id
-console.log(isSomeStudentHasGradeGreaterThan2());
+//getStudentById('562115028');//input id
+//console.log(isSomeStudentHasGradeGreaterThan2());
+const numbers=[1,2,,3,4,5,6,7,8,9,10];
+const sum=numbers.reduce((total,nextValue)=>total+nextValue,0); //0คือค่าเริ่มต้น
+console.log(sum);
