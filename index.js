@@ -16,9 +16,11 @@ const students=[student1,student2,student3];
 
 const getStudentById=(id)=>{
     console.log(students
-        .filter(student=>student.id===id)
-        .map(student=>'This is student number '+student.id) //เปลี่นรรูปแบบ
-        .pop()
+        //.filter(student=>student.id===id)
+        .map(student=>{
+            return {id:student.id,fullname:student.name};
+        })//เปลี่ยนรูปแบบ
+        //.pop() //เอาอันบนสุดอันเดียว
     );
 
 };
