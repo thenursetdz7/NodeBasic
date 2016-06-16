@@ -15,7 +15,11 @@ const student3={
 const students=[student1,student2,student3];
 
 const getStudentById=(id)=>{
-    console.log(students.filter(student=>student.id===id).pop());
+    console.log(students
+        .filter(student=>student.id===id)
+        .map(student=>'This is student number '+student.id) //เปลี่นรรูปแบบ
+        .pop()
+    );
 
 };
 getStudentById('562115028');//input id
