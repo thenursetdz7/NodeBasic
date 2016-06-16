@@ -13,15 +13,12 @@ const student3={
 };
 
 
-const getStudentById=(id,name)=>{
-    if(id){
-        console.log(id);
-    }
-    else {
-        console.log('Please insert id');
-    }
-
+const getStudentById=(id)=>{
+    switch (id){
+        case '562115028':return'good';
+        case '562115000':return'bad';
+        }
 
 };
-getStudentById();//input id
+console.log(getStudentById('562115028'));//input id
 
