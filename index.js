@@ -14,10 +14,14 @@ const student3={
 
 
 const getStudentById=(id,name)=>{
-    console.log(id,name);
+    if(id){
+        console.log(id);
+    }
+    else {
+        console.log('Please insert id');
+    }
+
 
 };
-
-
-getStudentById(10,'n');
+getStudentById();//input id
 
