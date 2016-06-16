@@ -13,15 +13,11 @@ const student3={
 };
 
 
-const getStudentById=(id)=>{
-    console.log(id);
+const getStudentById=(id,name)=>{
+    console.log(id,name);
 
 };
 
-/* const getStudentById= function(id){
-    console.log(id);
 
-};*/
-
-getStudentById(10);
+getStudentById(10,'n');
 
