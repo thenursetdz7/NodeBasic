@@ -17,20 +17,41 @@ const student3={
 
 const students=[student1,student2,student3];
 
-const getStudentById=(id)=>{
+const getStudentByIds=(id)=> {
+    //students.forEach(student=>{
+
+    students.forEach((student)=> {
+        if(id===student.id)
+            console.log(student)
+    });
+};
+getStudentByIds('562115028')
+const getStudentByName=(name)=> {
+    //students.forEach(student=>{
+
+    students.forEach((student)=> {
+        if(name===student.name)
+            console.log(student)
+    });
+};
+getStudentByName('Test')
+
+const getStudentByGrade=(grade)=>{
     console.log(students
-        //.filter(student=>student.id===id)
-        .map(student=>{
-            return {id:student.id,fullname:student.name+'55'};
-        })//เปลี่ยนรูปแบบ
+        .filter(student=>student.grade===grade)
+            .map(student=>{
+                return {id:student.id,fullname:student.name,grade:student.grade};
+            })//เปลี่ยนรูปแบบ
         //.pop() //เอาอันบนสุดอันเดียว
     );
 };
-const isSomeStudentHasGradeGreaterThan2=()=>{
+/*const isSomeStudentHasGradeGreaterThan2=()=>{
     return students.every(student=> student.grade>2.00);//ทุกคัว
-}
-//getStudentById('562115028');//input id
+}*/
+getStudentByGrade(3.1);//input id
 //console.log(isSomeStudentHasGradeGreaterThan2());
-const numbers=[1,2,,3,4,5,6,7,8,9,10];
+
+
+/*const numbers=[1,2,,3,4,5,6,7,8,9,10];
 const sum=numbers.reduce((total,nextValue)=>total+nextValue,0); //0คือค่าเริ่มต้น
-console.log(sum);
+console.log(sum);*/
